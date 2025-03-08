@@ -1,0 +1,24 @@
+---
+title: "Bioinformatics Analysis Overview"
+format:
+  html:
+    toc: true
+---
+
+# Overview of Analyses
+
+Below is a summary of completed analyses:
+
+| Analysis | Description | Results |
+|----------|------------|---------|
+| GWAS QC  | Quality control of genome-wide association study data | [View](gwas.qmd) |
+| PRS Calculation | Polygenic risk score calculation for Alzheimer's risk | [View](prs.qmd) |
+| Differential Expression | Transcriptomic analysis of case vs. control samples | [View](de_analysis.qmd) |
+
+_This site is updated regularly as new analyses are completed._
+
+---
+
+# Data Catalogue
+
+A list of datasets used in these analyses can be found [here](data_catalogue.qmd).

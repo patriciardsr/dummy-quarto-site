@@ -1,0 +1,25 @@
+---
+title: "Data Catalogue"
+format:
+  html:
+    toc: true
+---
+
+# Available Datasets
+
+| Dataset | Description | File Format | Source |
+|---------|------------|-------------|--------|
+| WGS Data | Whole-genome sequencing data for Alzheimer's patients | `.fastq`, `.bam` | [dbGaP](https://www.ncbi.nlm.nih.gov/gap/) |
+| Microglia Transcriptomics | RNA-seq data of aged microglia | `.csv` | [GEO](https://www.ncbi.nlm.nih.gov/geo/) |
+| GWAS Summary Stats | Public GWAS data for Alzheimer's risk loci | `.txt.gz` | [GWAS Catalog](https://www.ebi.ac.uk/gwas/) |
+
+**Note:** Some datasets require access approval before downloading.
+
+---
+
+## Data Storage & Organization
+
+- Raw data is stored on **HPC in `/scratch/user/data/`**  
+- Processed results are in **`/scratch/user/analysis/`**  
+
+If you need access to specific datasets, contact the analysis team.
