@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "data_catalogue.html",
+    "href": "data_catalogue.html",
+    "title": "Data Catalogue",
+    "section": "",
+    "text": "Dataset\nDescription\nFile Format\nSource\n\n\n\n\nWGS Data\nWhole-genome sequencing data for Alzheimer’s patients\n.fastq, .bam\ndbGaP\n\n\nMicroglia Transcriptomics\nRNA-seq data of aged microglia\n.csv\nGEO\n\n\nGWAS Summary Stats\nPublic GWAS data for Alzheimer’s risk loci\n.txt.gz\nGWAS Catalog\n\n\n\nNote: Some datasets require access approval before downloading.\n\n\n\n\nRaw data is stored on HPC in /scratch/user/data/\n\nProcessed results are in /scratch/user/analysis/\n\nIf you need access to specific datasets, contact the analysis team."
+  },
+  {
+    "objectID": "data_catalogue.html#data-storage-organization",
+    "href": "data_catalogue.html#data-storage-organization",
+    "title": "Data Catalogue",
+    "section": "",
+    "text": "Raw data is stored on HPC in /scratch/user/data/\n\nProcessed results are in /scratch/user/analysis/\n\nIf you need access to specific datasets, contact the analysis team."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bioinformatics Analysis Overview",
+    "section": "",
+    "text": "Overview of Analyses\nBelow is a summary of completed analyses:\n\n\n\nAnalysis\nDescription\nResults\n\n\n\n\nGWAS QC\nQuality control of genome-wide association study data\nView\n\n\nPRS Calculation\nPolygenic risk score calculation for Alzheimer’s risk\nView\n\n\nDifferential Expression\nTranscriptomic analysis of case vs. control samples\nView\n\n\n\nThis site is updated regularly as new analyses are completed.\n\n\n\nData Catalogue\nA list of datasets used in these analyses can be found here."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

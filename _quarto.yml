@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs  # This will create a docs folder
 
 website:
   title: "Bioinformatics Analysis"
