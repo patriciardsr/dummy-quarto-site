@@ -17,6 +17,12 @@ Below is a summary of completed analyses:
 
 _This site is updated regularly as new analyses are completed._
 
+## Analyses
+- [Analysis Template](analysis/analysis_template.html)
+- [GWAS QC](analysis/gwas_qc.html)
+- [PRS Analysis](analysis/prs_analysis.html)
+
+
 ---
 
 # Data Catalogue

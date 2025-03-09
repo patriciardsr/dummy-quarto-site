@@ -18,7 +18,14 @@
     "href": "index.html",
     "title": "Bioinformatics Analysis Overview",
     "section": "",
-    "text": "1 Overview of Analyses\nBelow is a summary of completed analyses:\n\n\n\nAnalysis\nDescription\nResults\n\n\n\n\nGWAS QC\nQuality control of genome-wide association study data\nView\n\n\nPRS Calculation\nPolygenic risk score calculation for Alzheimer’s risk\nView\n\n\nDifferential Expression\nTranscriptomic analysis of case vs. control samples\nView\n\n\n\nThis site is updated regularly as new analyses are completed.\n\n\n\n2 Data Catalogue\nA list of datasets used in these analyses can be found here."
+    "text": "Below is a summary of completed analyses:\n\n\n\nAnalysis\nDescription\nResults\n\n\n\n\nGWAS QC\nQuality control of genome-wide association study data\nView\n\n\nPRS Calculation\nPolygenic risk score calculation for Alzheimer’s risk\nView\n\n\nDifferential Expression\nTranscriptomic analysis of case vs. control samples\nView\n\n\n\nThis site is updated regularly as new analyses are completed.\n\n\n\nAnalysis Template\nGWAS QC\nPRS Analysis"
+  },
+  {
+    "objectID": "index.html#analyses",
+    "href": "index.html#analyses",
+    "title": "Bioinformatics Analysis Overview",
+    "section": "",
+    "text": "Analysis Template\nGWAS QC\nPRS Analysis"
   },
   {
     "objectID": "analysis/analysis_template.html",
