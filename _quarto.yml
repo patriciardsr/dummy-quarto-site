@@ -7,22 +7,27 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: data_catalogue.qmd
-        text: Data Catalogue
-      - text: Analysis
+        text: "Home"
+      - text: "Analyses"
         menu:
-          - href: gwas.qmd
-            text: GWAS QC
-          - href: prs.qmd
-            text: PRS Calculation
-          - href: de_analysis.qmd
-            text: Differential Expression
-  search: true
-
+          - href: analysis/gwas_qc.qmd
+            text: "GWAS QC"
+          - href: analysis/prs_analysis.qmd
+            text: "PRS Analysis"
+          - href: analysis/analysis_template.qmd
+            text: "Analysis template"
+  sidebar:
+    - title: "Analyses"
+      contents:
+        - analysis/gwas_qc.qmd
+        - analysis/prs_analysis.qmd
+        - analysis/analysis_template.qmd
 format:
   html:
     theme: 
       light: flatly
       dark: darkly
     toc: true
+    toc-depth: 2
+    code-fold: true
+    number-sections: true

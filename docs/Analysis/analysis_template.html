@@ -122,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,26 +143,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../data_catalogue.html"> 
-<span class="menu-text">Data Catalogue</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analysis" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Analysis</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analyses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Analyses</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-analysis">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-analyses">    
         <li>
-    <a class="dropdown-item" href="../gwas.qmd">
+    <a class="dropdown-item" href="../analysis/gwas_qc.qmd">
  <span class="dropdown-text">GWAS QC</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../prs.qmd">
- <span class="dropdown-text">PRS Calculation</span></a>
+    <a class="dropdown-item" href="../analysis/prs_analysis.qmd">
+ <span class="dropdown-text">PRS Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../de_analysis.qmd">
- <span class="dropdown-text">Differential Expression</span></a>
+    <a class="dropdown-item" href="../analysis/analysis_template.html">
+ <span class="dropdown-text">Analysis template</span></a>
   </li>  
     </ul>
   </li>
@@ -173,19 +169,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../analysis/analysis_template.html">Analysis Title</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+ <span class="menu-text">analysis/gwas_qc.qmd</span>
+  </li>
+        <li class="sidebar-item">
+ <span class="menu-text">analysis/prs_analysis.qmd</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../analysis/analysis_template.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Analysis Title</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><strong>Overview</strong></a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><strong>Methods</strong></a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><strong>Results</strong></a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> <strong>Overview</strong></a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">2</span> <strong>Methods</strong></a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3</span> <strong>Results</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -228,23 +253,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview"><strong>Overview</strong></h2>
+<section id="overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> <strong>Overview</strong></h2>
 <p><em>Provide a brief description of the analysis, its objectives, and key findings.</em></p>
 <hr>
 </section>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods"><strong>Methods</strong></h2>
-<section id="data-sources" class="level3">
-<h3 class="anchored" data-anchor-id="data-sources"><strong>Data Sources</strong></h3>
+<section id="methods" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="methods"><span class="header-section-number">2</span> <strong>Methods</strong></h2>
+<section id="data-sources" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="data-sources"><span class="header-section-number">2.1</span> <strong>Data Sources</strong></h3>
 <ul>
 <li>Dataset: <code>dataset_name</code></li>
 <li>Location: <code>/path/to/data/</code></li>
 <li>Number of Samples: <code>XXX</code></li>
 </ul>
 </section>
-<section id="analysis-steps" class="level3">
-<h3 class="anchored" data-anchor-id="analysis-steps"><strong>Analysis Steps</strong></h3>
+<section id="analysis-steps" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="analysis-steps"><span class="header-section-number">2.2</span> <strong>Analysis Steps</strong></h3>
 <ol type="1">
 <li>Load the dataset</li>
 <li>Perform QC and filtering</li>
@@ -254,10 +279,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results"><strong>Results</strong></h2>
-<section id="interactive-table-of-summary-statistics" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-table-of-summary-statistics"><strong>1️⃣ Interactive Table of Summary Statistics</strong></h3>
+<section id="results" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="results"><span class="header-section-number">3</span> <strong>Results</strong></h2>
+<section id="interactive-table-of-summary-statistics" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="interactive-table-of-summary-statistics"><span class="header-section-number">3.1</span> <strong>1️⃣ Interactive Table of Summary Statistics</strong></h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -279,8 +304,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="interactive-pca-plot" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-pca-plot"><strong>1️⃣ Interactive PCA Plot</strong></h3>
+<section id="interactive-pca-plot" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="interactive-pca-plot"><span class="header-section-number">3.2</span> <strong>1️⃣ Interactive PCA Plot</strong></h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -332,17 +357,17 @@ Warning in RColorBrewer::brewer.pal(N, "Set2"): minimal value for n is 3, return
 </div>
 </div>
 </section>
-<section id="interpretation" class="level3">
-<h3 class="anchored" data-anchor-id="interpretation"><strong>Interpretation</strong></h3>
+<section id="interpretation" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="interpretation"><span class="header-section-number">3.3</span> <strong>Interpretation</strong></h3>
 <p>Summarize key findings, trends, and next steps.</p>
 </section>
-<section id="download-reproducibility" class="level3">
-<h3 class="anchored" data-anchor-id="download-reproducibility"><strong>Download &amp; Reproducibility</strong></h3>
+<section id="download-reproducibility" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="download-reproducibility"><span class="header-section-number">3.4</span> <strong>Download &amp; Reproducibility</strong></h3>
 <p>Full script: Download Raw data: /path/to/results/ Re-run instructions:</p>
 <hr>
 </section>
-<section id="how-to-use-this-template" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-this-template"><strong>🔹 How to Use This Template</strong></h3>
+<section id="how-to-use-this-template" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="how-to-use-this-template"><span class="header-section-number">3.5</span> <strong>🔹 How to Use This Template</strong></h3>
 <ul>
 <li>Save it as <code>analysis_template.qmd</code> in your <code>analysis/</code> folder.<br>
 </li>
@@ -354,8 +379,8 @@ Warning in RColorBrewer::brewer.pal(N, "Set2"): minimal value for n is 3, return
 </ul>
 <hr>
 </section>
-<section id="next-steps" class="level3">
-<h3 class="anchored" data-anchor-id="next-steps"><strong>Next Steps</strong></h3>
+<section id="next-steps" class="level3" data-number="3.6">
+<h3 data-number="3.6" class="anchored" data-anchor-id="next-steps"><span class="header-section-number">3.6</span> <strong>Next Steps</strong></h3>
 <ol type="1">
 <li><strong>Would you like me to generate a Quarto project structure with sample analysis pages?</strong></li>
 <li><strong>Do you need specific automation to pull data from your HPC?</strong></li>
