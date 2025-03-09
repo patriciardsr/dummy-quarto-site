@@ -1,0 +1,89 @@
+---
+title: "Analysis Title"
+author: "Your Name"
+date: "`r Sys.Date()`"
+categories: [Analysis, GWAS, PRS]  # Modify based on the type of analysis
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+---
+
+## **Overview**
+_Provide a brief description of the analysis, its objectives, and key findings._
+
+---
+
+## **Methods**
+### **Data Sources**
+- Dataset: `dataset_name`
+- Location: `/path/to/data/`
+- Number of Samples: `XXX`
+
+### **Analysis Steps**
+1. Load the dataset
+2. Perform QC and filtering
+3. Generate visualizations
+4. Summarize key findings
+
+---
+
+## **Results**
+### **1️⃣ Interactive Table of Summary Statistics**
+```{r}
+library(DT)
+
+# Dummy data
+df <- data.frame(
+  Sample = paste0("Sample_", 1:10),
+  SNPs = sample(500000:1000000, 10),
+  MissingRate = runif(10, 0, 0.05),
+  Heterozygosity = runif(10, 0.3, 0.5)
+)
+
+datatable(df, options = list(pageLength = 5, scrollX = TRUE))
+
+```
+
+
+### **1️⃣ Interactive PCA Plot**
+```{r}
+library(plotly)
+
+# Dummy PCA data
+set.seed(123)
+pca_data <- data.frame(
+  Sample = paste0("Sample_", 1:50),
+  PC1 = rnorm(50),
+  PC2 = rnorm(50),
+  Population = sample(c("Group A", "Group B"), 50, replace = TRUE)
+)
+
+p <- plot_ly(pca_data, x = ~PC1, y = ~PC2, color = ~Population, type = 'scatter', mode = 'markers', text = ~Sample)
+p
+```
+
+### **Interpretation**
+Summarize key findings, trends, and next steps.
+
+### **Download & Reproducibility**
+Full script: Download
+Raw data: /path/to/results/
+Re-run instructions:
+
+---
+
+### **🔹 How to Use This Template**
+- Save it as `analysis_template.qmd` in your `analysis/` folder.  
+- Copy and rename it for each new analysis (e.g., `gwas_qc.qmd`, `prs.qmd`).  
+- Modify the **title, categories, and content**.  
+- Update the **data and plots dynamically** based on new analyses.  
+
+---
+
+### **Next Steps**
+1. **Would you like me to generate a Quarto project structure with sample analysis pages?**
+2. **Do you need specific automation to pull data from your HPC?**
+
+Let me know how to refine this further! 🚀
