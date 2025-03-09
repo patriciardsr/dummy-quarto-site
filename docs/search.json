@@ -21,32 +21,32 @@
     "text": "1 Overview of Analyses\nBelow is a summary of completed analyses:\n\n\n\nAnalysis\nDescription\nResults\n\n\n\n\nGWAS QC\nQuality control of genome-wide association study data\nView\n\n\nPRS Calculation\nPolygenic risk score calculation for Alzheimer’s risk\nView\n\n\nDifferential Expression\nTranscriptomic analysis of case vs. control samples\nView\n\n\n\nThis site is updated regularly as new analyses are completed.\n\n\n\n2 Data Catalogue\nA list of datasets used in these analyses can be found here."
   },
   {
-    "objectID": "Analysis/analysis_template.html",
-    "href": "Analysis/analysis_template.html",
+    "objectID": "analysis/analysis_template.html",
+    "href": "analysis/analysis_template.html",
     "title": "Analysis Title",
     "section": "",
     "text": "Provide a brief description of the analysis, its objectives, and key findings."
   },
   {
-    "objectID": "Analysis/analysis_template.html#overview",
-    "href": "Analysis/analysis_template.html#overview",
+    "objectID": "analysis/analysis_template.html#overview",
+    "href": "analysis/analysis_template.html#overview",
     "title": "Analysis Title",
     "section": "",
     "text": "Provide a brief description of the analysis, its objectives, and key findings."
   },
   {
-    "objectID": "Analysis/analysis_template.html#methods",
-    "href": "Analysis/analysis_template.html#methods",
+    "objectID": "analysis/analysis_template.html#methods",
+    "href": "analysis/analysis_template.html#methods",
     "title": "Analysis Title",
-    "section": "Methods",
-    "text": "Methods\n\nData Sources\n\nDataset: dataset_name\nLocation: /path/to/data/\nNumber of Samples: XXX\n\n\n\nAnalysis Steps\n\nLoad the dataset\nPerform QC and filtering\nGenerate visualizations\nSummarize key findings"
+    "section": "2 Methods",
+    "text": "2 Methods\n\n2.1 Data Sources\n\nDataset: dataset_name\nLocation: /path/to/data/\nNumber of Samples: XXX\n\n\n\n2.2 Analysis Steps\n\nLoad the dataset\nPerform QC and filtering\nGenerate visualizations\nSummarize key findings"
   },
   {
-    "objectID": "Analysis/analysis_template.html#results",
-    "href": "Analysis/analysis_template.html#results",
+    "objectID": "analysis/analysis_template.html#results",
+    "href": "analysis/analysis_template.html#results",
     "title": "Analysis Title",
-    "section": "Results",
-    "text": "Results\n\n1️⃣ Interactive Table of Summary Statistics\n\n\nCode\nlibrary(DT)\n\n# Dummy data\ndf &lt;- data.frame(\n  Sample = paste0(\"Sample_\", 1:10),\n  SNPs = sample(500000:1000000, 10),\n  MissingRate = runif(10, 0, 0.05),\n  Heterozygosity = runif(10, 0.3, 0.5)\n)\n\ndatatable(df, options = list(pageLength = 5, scrollX = TRUE))\n\n\n\n\n\n\n\n\n1️⃣ Interactive PCA Plot\n\n\nCode\nlibrary(plotly)\n\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\n# Dummy PCA data\nset.seed(123)\npca_data &lt;- data.frame(\n  Sample = paste0(\"Sample_\", 1:50),\n  PC1 = rnorm(50),\n  PC2 = rnorm(50),\n  Population = sample(c(\"Group A\", \"Group B\"), 50, replace = TRUE)\n)\n\np &lt;- plot_ly(pca_data, x = ~PC1, y = ~PC2, color = ~Population, type = 'scatter', mode = 'markers', text = ~Sample)\np\n\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\n\n\n\n\n\n\nInterpretation\nSummarize key findings, trends, and next steps.\n\n\nDownload & Reproducibility\nFull script: Download Raw data: /path/to/results/ Re-run instructions:\n\n\n\n🔹 How to Use This Template\n\nSave it as analysis_template.qmd in your analysis/ folder.\n\nCopy and rename it for each new analysis (e.g., gwas_qc.qmd, prs.qmd).\n\nModify the title, categories, and content.\n\nUpdate the data and plots dynamically based on new analyses.\n\n\n\n\nNext Steps\n\nWould you like me to generate a Quarto project structure with sample analysis pages?\nDo you need specific automation to pull data from your HPC?\n\nLet me know how to refine this further! 🚀"
+    "section": "3 Results",
+    "text": "3 Results\n\n3.1 1️⃣ Interactive Table of Summary Statistics\n\n\nCode\nlibrary(DT)\n\n# Dummy data\ndf &lt;- data.frame(\n  Sample = paste0(\"Sample_\", 1:10),\n  SNPs = sample(500000:1000000, 10),\n  MissingRate = runif(10, 0, 0.05),\n  Heterozygosity = runif(10, 0.3, 0.5)\n)\n\ndatatable(df, options = list(pageLength = 5, scrollX = TRUE))\n\n\n\n\n\n\n\n\n3.2 1️⃣ Interactive PCA Plot\n\n\nCode\nlibrary(plotly)\n\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\n# Dummy PCA data\nset.seed(123)\npca_data &lt;- data.frame(\n  Sample = paste0(\"Sample_\", 1:50),\n  PC1 = rnorm(50),\n  PC2 = rnorm(50),\n  Population = sample(c(\"Group A\", \"Group B\"), 50, replace = TRUE)\n)\n\np &lt;- plot_ly(pca_data, x = ~PC1, y = ~PC2, color = ~Population, type = 'scatter', mode = 'markers', text = ~Sample)\np\n\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\n\n\n\n\n\n\n3.3 Interpretation\nSummarize key findings, trends, and next steps.\n\n\n3.4 Download & Reproducibility\nFull script: Download Raw data: /path/to/results/ Re-run instructions:\n\n\n\n3.5 🔹 How to Use This Template\n\nSave it as analysis_template.qmd in your analysis/ folder.\n\nCopy and rename it for each new analysis (e.g., gwas_qc.qmd, prs.qmd).\n\nModify the title, categories, and content.\n\nUpdate the data and plots dynamically based on new analyses.\n\n\n\n\n3.6 Next Steps\n\nWould you like me to generate a Quarto project structure with sample analysis pages?\nDo you need specific automation to pull data from your HPC?"
   },
   {
     "objectID": "about.html",
@@ -54,45 +54,5 @@
     "title": "About",
     "section": "",
     "text": "About this site"
-  },
-  {
-    "objectID": "analysis/analysis_template.html",
-    "href": "analysis/analysis_template.html",
-    "title": "Analysis Title",
-    "section": "",
-    "text": "Provide a brief description of the analysis, its objectives, and key findings.",
-    "crumbs": [
-      "Analysis Title"
-    ]
-  },
-  {
-    "objectID": "analysis/analysis_template.html#overview",
-    "href": "analysis/analysis_template.html#overview",
-    "title": "Analysis Title",
-    "section": "",
-    "text": "Provide a brief description of the analysis, its objectives, and key findings.",
-    "crumbs": [
-      "Analysis Title"
-    ]
-  },
-  {
-    "objectID": "analysis/analysis_template.html#methods",
-    "href": "analysis/analysis_template.html#methods",
-    "title": "Analysis Title",
-    "section": "2 Methods",
-    "text": "2 Methods\n\n2.1 Data Sources\n\nDataset: dataset_name\nLocation: /path/to/data/\nNumber of Samples: XXX\n\n\n\n2.2 Analysis Steps\n\nLoad the dataset\nPerform QC and filtering\nGenerate visualizations\nSummarize key findings",
-    "crumbs": [
-      "Analysis Title"
-    ]
-  },
-  {
-    "objectID": "analysis/analysis_template.html#results",
-    "href": "analysis/analysis_template.html#results",
-    "title": "Analysis Title",
-    "section": "3 Results",
-    "text": "3 Results\n\n3.1 1️⃣ Interactive Table of Summary Statistics\n\n\nCode\nlibrary(DT)\n\n# Dummy data\ndf &lt;- data.frame(\n  Sample = paste0(\"Sample_\", 1:10),\n  SNPs = sample(500000:1000000, 10),\n  MissingRate = runif(10, 0, 0.05),\n  Heterozygosity = runif(10, 0.3, 0.5)\n)\n\ndatatable(df, options = list(pageLength = 5, scrollX = TRUE))\n\n\n\n\n\n\n\n\n3.2 1️⃣ Interactive PCA Plot\n\n\nCode\nlibrary(plotly)\n\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\n# Dummy PCA data\nset.seed(123)\npca_data &lt;- data.frame(\n  Sample = paste0(\"Sample_\", 1:50),\n  PC1 = rnorm(50),\n  PC2 = rnorm(50),\n  Population = sample(c(\"Group A\", \"Group B\"), 50, replace = TRUE)\n)\n\np &lt;- plot_ly(pca_data, x = ~PC1, y = ~PC2, color = ~Population, type = 'scatter', mode = 'markers', text = ~Sample)\np\n\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\n\n\n\n\n\n\n3.3 Interpretation\nSummarize key findings, trends, and next steps.\n\n\n3.4 Download & Reproducibility\nFull script: Download Raw data: /path/to/results/ Re-run instructions:\n\n\n\n3.5 🔹 How to Use This Template\n\nSave it as analysis_template.qmd in your analysis/ folder.\n\nCopy and rename it for each new analysis (e.g., gwas_qc.qmd, prs.qmd).\n\nModify the title, categories, and content.\n\nUpdate the data and plots dynamically based on new analyses.\n\n\n\n\n3.6 Next Steps\n\nWould you like me to generate a Quarto project structure with sample analysis pages?\nDo you need specific automation to pull data from your HPC?",
-    "crumbs": [
-      "Analysis Title"
-    ]
   }
 ]

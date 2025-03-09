@@ -21,9 +21,9 @@ website:
   sidebar:
     - title: "Analyses"
       contents:
-        - analysis/gwas_qc.qmd
-        - analysis/prs_analysis.qmd
-        - analysis/analysis_template.qmd
+        - analysis/gwas_qc.html
+        - analysis/prs_analysis.html
+        - analysis/analysis_template.html
 format:
   html:
     theme: 
