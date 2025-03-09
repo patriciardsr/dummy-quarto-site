@@ -8,6 +8,8 @@ website:
     left:
       - href: index.qmd
         text: "Home"
+      - href: data_catalogue.qmd
+        text: Data Catalogue
       - text: "Analyses"
         menu:
           - href: analysis/gwas_qc.qmd

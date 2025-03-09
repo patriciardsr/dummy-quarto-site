@@ -98,25 +98,21 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Data Catalogue</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analysis" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Analysis</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analyses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Analyses</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-analysis">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-analyses">    
         <li>
-    <a class="dropdown-item" href="./gwas.qmd">
+    <a class="dropdown-item" href="./analysis/gwas_qc.qmd">
  <span class="dropdown-text">GWAS QC</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./prs.qmd">
- <span class="dropdown-text">PRS Calculation</span></a>
+    <a class="dropdown-item" href="./analysis/prs_analysis.qmd">
+ <span class="dropdown-text">PRS Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./de_analysis.qmd">
- <span class="dropdown-text">Differential Expression</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="//Analysis/analysis_template.html">
- <span class="dropdown-text">Analysis Template</span></a>
+    <a class="dropdown-item" href="./analysis/analysis_template.html">
+ <span class="dropdown-text">Analysis template</span></a>
   </li>  
     </ul>
   </li>
@@ -136,10 +132,10 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#available-datasets" id="toc-available-datasets" class="nav-link active" data-scroll-target="#available-datasets">Available Datasets</a>
   <ul class="collapse">
-  <li><a href="#data-storage-organization" id="toc-data-storage-organization" class="nav-link" data-scroll-target="#data-storage-organization">Data Storage &amp; Organization</a></li>
+  <li><a href="#available-datasets" id="toc-available-datasets" class="nav-link active" data-scroll-target="#available-datasets"><span class="header-section-number">1</span> Available Datasets</a>
+  <ul class="collapse">
+  <li><a href="#data-storage-organization" id="toc-data-storage-organization" class="nav-link" data-scroll-target="#data-storage-organization"><span class="header-section-number">1.1</span> Data Storage &amp; Organization</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -166,8 +162,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="available-datasets" class="level1">
-<h1>Available Datasets</h1>
+<section id="available-datasets" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Available Datasets</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -200,8 +196,8 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p><strong>Note:</strong> Some datasets require access approval before downloading.</p>
 <hr>
-<section id="data-storage-organization" class="level2">
-<h2 class="anchored" data-anchor-id="data-storage-organization">Data Storage &amp; Organization</h2>
+<section id="data-storage-organization" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="data-storage-organization"><span class="header-section-number">1.1</span> Data Storage &amp; Organization</h2>
 <ul>
 <li>Raw data is stored on <strong>HPC in <code>/scratch/user/data/</code></strong><br>
 </li>
