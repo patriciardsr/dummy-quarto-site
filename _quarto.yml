@@ -33,3 +33,4 @@ format:
     toc-depth: 2
     code-fold: true
     number-sections: true
+    css: styles.css
